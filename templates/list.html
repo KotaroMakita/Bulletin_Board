@@ -13,12 +13,11 @@
 <div class="container">
 {% for item in object_list %}
 <div class="alert-success" role="alert">
-<ul>
-    <li>{{ item.title }}</li>
-</ul>
+{{ item.title }}
     <a href="#" class="btn btn-primary  " tabindex="-1" role="button" aria-disabled="true">コメント</a>
 <a href="#" class="btn btn-secondary  " tabindex="-1" role="button" aria-disabled="true">いいね</a>
-</div>
+</div><br>
 {% endfor%}
 </div>
+<a href="{% url 'create' %}" class="btn-danger" tabindex="-1" role="button" aria-disabled="true">新規作成</a>
 {% endblock content %}
