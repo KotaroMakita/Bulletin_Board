@@ -9,6 +9,7 @@ from django.urls import reverse_lazy
 class B_BoardList(ListView):
     template_name = 'list.html'
     model = B_BoardModel
+    paginate_by = 10
 
 
 class B_BoardDetail(DetailView):

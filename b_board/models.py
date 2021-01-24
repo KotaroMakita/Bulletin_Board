@@ -9,3 +9,7 @@ class B_BoardModel(models.Model):
     good = models.IntegerField()
     def __str__(self):
         return self.title
+
+
+class BoardCommentModel(models.Model):
+    comment = models.TextField()
